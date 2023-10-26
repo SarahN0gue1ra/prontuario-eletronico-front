@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Recepsionista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="inicio.html">INÍCIO</a></li>
+        </ul>
+    </header>
+    <main class="centered-content">
+        <section class="apresentacao">
+            <form action="perfil_recepsionista.html">
+                
+                <div class="div_conteudo">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                    <input type="number" id="idade" name="idade" placeholder="Idade" required>
+                </div>
+    
+                <div class="div_conteudo">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="date" id="nascimento" name="nascimento" placeholder="Data de Nascimento" required>
+                    <input type="text" id="raca" name="raca" placeholder="Raça">
+                </div>
+
+                <div class="div_conteudo">
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+                    <input type="tel" id="contato1" name="contato1" placeholder="Contato 1">
+                    <input type="tel" id="contato2" name="contato2" placeholder="Contato 2">
+                </div>    
+
+                <div>
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

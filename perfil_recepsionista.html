@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Recepcionista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <ul class="navbar">
+            <li><a href="inicio.html">INÍCIO</a></li>
+        </ul>
+    </header>
+    
+    <div class="centered-content" id="calendario"></div>
+    
+    <div id="formulario">
+        <h1 class="titulo_h1">Agendar Consulta</h1>
+        <form>
+            
+            <div class="div_conteudo">
+                <input type="text" id="nomePaciente" name="nomePaciente" placeholder="Nome do paciente" required><br><br>
+            
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" required><br><br>
+                
+                <input type="time" id="horario" name="horario" required><br><br>
+            </div>
+           
+            <div>
+                <label for="medico">Médico:</label>
+                <select id="medico" name="medico" required>
+                    <option value="medico1">Fulaninha</option>
+                    <option value="medico2">Fulaninha2</option>
+                    <option value="medico3">Fulaninha3</option>
+                </select><br><br>
+            </div>
+            
+            <div>
+                <input type="submit" value="Agendar Consulta">
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendario');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                selectable: true,
+                dateClick: function(info) {
+                    var formulario = document.getElementById('formulario');
+                    formulario.style.display = 'block';
+                    formulario.querySelector('#nomePaciente').value = '';
+                    formulario.querySelector('#cpf').value = '';
+                    formulario.querySelector('#horario').value = '';
+                    formulario.querySelector('#medico').selectedIndex = 0;
+                }
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

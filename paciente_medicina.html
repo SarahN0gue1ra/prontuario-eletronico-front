@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="inicio.html">INÍCIO</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <nav class="nav">
+            <section class="nav_conteudo">
+                <img class="main_imagem" src="asset/icone_maior.png" alt="icone_perfil">
+                <h3>Fulaninha da Silva</h3>
+                <p>Seja Bem-Vinda</p>
+            </section>
+    
+            <section class="sidebar">
+                <ul>
+                    <li><a href="paciente_medicina.html">PERFIL</a></li>
+                    <li><a href="laudo_medicina.html">LAUDO</a></li>
+                    <li><a href="evolucao_medicina.html">EVOLUÇÃO</a></li>
+                </ul>
+            </section>
+        </nav>
+    
+        <menu class="centered-content">
+            <section class="apresentacao">
+                <form>
+                    <div class="div_conteudo">
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                        <input type="number" id="idade" name="idade" placeholder="Idade" required>
+                    </div>
+        
+                    <div class="div_conteudo">
+                        <input type="text" id="curso" name="curso" placeholder="Curso">
+                        <input type="date" id="nascimento" name="nascimento" placeholder="Data de Nascimento" required>
+                        <input type="text" id="raca" name="raca" placeholder="Raça">
+                    </div>             
+                </form>
+            </section>
+        </menu>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="inicio.html">INÍCIO</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <nav class="nav">
+            <section class="nav_conteudo">
+                <img class="main_imagem" src="asset/icone_maior.png" alt="icone_perfil">
+                <h3>Fulaninha da Silva</h3>
+                <p>Seja Bem-Vinda</p>
+            </section>
+
+            <section class="sidebar">
+                <ul>
+                    <li><a href="perfil_paciente.html">PERFIL</a></li>
+                    <li><a href="laudo_enfermagem.html">LAUDO</a></li>
+                    <li><a href="evolucao_enfermagem.html">EVOLUÇÃO</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <main class="centered-content">
+            <section>
+                <form>
+                    <div>
+                        <label for="diagnostico">Diagnóstico:</label>
+                        <textarea id="diagnostico" name="diagnostico" rows="4" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="prescricoes">Prescrições:</label>
+                        <textarea id="prescricoes" name="prescricoes" rows="4" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="tratamento">Tratamento:</label>
+                        <textarea id="tratamento" name="tratamento" rows="4" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="resultados">Resultado de Exames e Procedimentos:</label>
+                        <textarea id="resultados" name="resultados" rows="4" required></textarea>
+                    </div>
+                
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

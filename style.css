@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:opsz,wght@6..12,600 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul.navbar {
+    list-style-type: none;
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ul.navbar li a:hover {
+    background-color: #ddd;
+}
+
+.container{
+    display: flex;
+    gap: 5%;
+    height: 100vh;
+}
+
+.nav{
+    width: 15.2em;
+}
+
+.nav_conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    background-color: #558c8c5e;
+}
+
+.nav_conteudo h3, p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 2%;
+}
+
+
+.sidebar{
+    height: 100vh;
+    background-color:#558C8C;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li{
+    padding: 0.9em;
+    text-align: center;
+}
+
+.sidebar a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.sidebar a:hover{
+    color: white;
+}
+
+.centered-content {
+    text-align: center;
+    max-width: 75em;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 10%;
+}
+
+.apresentacao_conteudo {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 80vh;
+}
+
+.apresentacao_conteudo_form {
+    width: 45%; 
+    margin: 0 auto;
+}
+
+.main_imagem {
+    width:30%; 
+    max-width: 100%;
+    height: auto;
+}
+
+form{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+form input, form textarea, form select{
+    outline: unset;
+    padding: 1.2em;
+    min-width: 19em;
+    border: 1px solid darkcyan;
+    border-radius: 1.2em;
+}
+
+form input:focus{
+    background-color: #ddd;
+}
+
+.div_conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.apresentacao_conteudo_link{
+    color: darkcyan;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.titulo_h1{
+    font-size: 2em;
+    color: #558C8C ;
+}
+
+.lista_paciente{
+    list-style-type: circle;
+}
+
+.paciente{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.paciente:hover{
+    color: #558C8C;
+}
+
+@media screen and (max-width: 600px) {
+    .apresentacao_conteudo_form {
+        max-width: 100%; 
+        padding: 0.8em;
+    }
+
+    ul.navbar {
+        text-align: center;
+    }
+
+    ul.navbar li {
+        float: none;
+        display: inline-block;
+    }
+
+    form div {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    form input, form textarea {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .apresentacao_conteudo_form {
+        max-width: 70%; 
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .apresentacao_conteudo_form {
+        max-width: 50%; 
+    }
+}
